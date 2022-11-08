@@ -1,0 +1,181 @@
+@use "variables";
+@use "mixin" as m;
+//main
+.main_visu {
+  position: relative;
+  width: 100%;
+  height: calc(100vh);
+  .link_icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(70, 31, 0);
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.8;
+    width: 35px;
+    height: 35px;
+    &:nth-of-type(2){
+      left: 85px;
+    }
+    img{
+      width: 100%;
+    }
+
+  }
+  .logo_visu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    // margin: 0 auto;
+    animation: main_In forwards;
+    animation-duration: 1.5s;
+
+    @keyframes main_In {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    img {
+      background-color: rgb(255, 227, 200);
+      box-shadow: 0 0 15px rgb(255, 212, 170);
+      border-radius: 5%;
+      padding: 2% 5%;
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      filter: brightness(130%);
+      @include m.mq(tab){
+        width: 250px;
+      }
+      @include m.mq(sp){
+        width: 200px;
+      }
+
+    }
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    @include m.mq(sp){
+      top: 150px;
+    }
+    li {
+      opacity: 0;
+      padding: 10px;
+      margin: 10px auto;
+      list-style: none;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #000;
+      &:nth-of-type(1) {
+        animation: menu_In forwards;
+        animation-duration: 1s;
+        animation-delay: 1s;
+      }
+      &:nth-of-type(2) {
+        animation: menu_In forwards;
+        animation-duration: 1s;
+        animation-delay: 1.25s;
+      }
+      &:nth-of-type(3) {
+        animation: menu_In forwards;
+        animation-duration: 1s;
+        animation-delay: 1.5s;
+      }
+      @keyframes menu_In {
+        0% {
+          opacity: 1;
+          transform: translateX(200px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+#slider {
+  width: 100%;
+  height: 100vh;
+}
+
+//news(お知らせ)
+.news{
+  background-color: rgba(255, 255, 255, 0.543);
+  margin: 100px 9%;
+  border-radius: 3%;
+  @include m.mq(sp){
+    margin: 100px 1%;
+  }
+  .subtitle{
+      padding-top: 50px;
+      margin-top: 400px;
+      position: relative;
+      font-family: hot-gfkaishokk,sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 5rem;
+      text-align: center;
+      @include m.mq(sp){
+        font-size: 4rem;
+      }  
+      &::after{
+          content: "";
+          width: 350px;
+          height: 100px;
+          display: inline-block;
+          background-image: url(../img/subtitlebar.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          text-align: center;
+          position: absolute;
+          margin: auto;
+          left: 0;
+          right: 0;
+          top: 105px;
+          @include m.mq(sp){
+            width: 250px;
+            height: 70px;
+            top: 90px;
+          }      
+      }
+  }
+}
+dl{
+  font-size: 1.5rem;
+  padding: 100px 0;
+  div{
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 50px;
+      justify-content: space-around;
+      border-bottom: 1px solid #000;
+      margin: 0 15%;
+      @include m.mq(sp){
+        margin: 0 5%;
+      }  
+      &:first-child{
+          padding: 0;
+      }
+      dd{
+        margin-right: auto;
+      }
+      dt{
+        margin-right: auto;
+      }
+  }
+}

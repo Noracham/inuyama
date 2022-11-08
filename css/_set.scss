@@ -1,0 +1,25 @@
+@use "variables";
+@use "mixin" as m;
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: variables.$base_fonts;
+}
+body{
+    background-image: url(../img/background_washi.jpeg);
+}
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    @include m.mq(tab){
+        max-width: 1024px;
+    }
+    @include m.mq(sp){
+        max-width: 768px;
+    }
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
