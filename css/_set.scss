@@ -4,6 +4,7 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: variables.$base_fonts;
+    max-width: 100vw;
 }
 body{
     background-image: url(../img/background_washi.jpeg);
@@ -21,5 +22,10 @@ body{
 a{
     text-decoration: none;
     color: #fff;
+}
+h1{
+    font-family: hot-gfkaishokk,sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
