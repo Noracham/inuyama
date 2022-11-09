@@ -177,14 +177,14 @@ dl{
         margin-right: auto;
       }
       dt{
-        margin-right: auto;
+        margin-right: 5%;
       }
   }
 }
 // アピールappeal
 .appeal{
   position: relative;
-  margin: 200px 9%;
+  margin: 400px 9% 200px;
   display: flex;
   justify-content: space-around;
   @include m.mq(sp){
@@ -197,13 +197,13 @@ dl{
     @include m.mq(sp){
       width: 100%;
       font-size: 4.5rem;
-      align-self: flex-start;
+      align-self: flex-start;      
     }
   }
   p{
     padding-top: 3rem;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
     width: 40%;
     @include m.mq(sp){
       width: 100%;
@@ -211,5 +211,100 @@ dl{
 
     }
   }
+}
+//pointポイント
+.points{
+  margin: 200px 5%;
+  @include m.mq(sp){
+    margin: 50px 1%;
+  }
+  .sub_pointTitle{
+    margin: 600px 20% 50px 9%;
+    position: relative;
+    z-index: 999;
+    @include m.mq(sp){
+      margin-top: 100px;
+    }
+    h1{
+      font-size: 7rem;
+      text-align: center;
+      @include m.mq(tab){
+        padding-top: 75px;
+        font-size: 5.5rem;
+        padding-right: 23px;
+      }
+      @include m.mq(sp){
+        font-size: 4rem;
+        text-align: left;
+        padding-top: 90px;
+        margin-bottom: -50px;
+        padding-left: 0;
+      }
+    }
+
+    img{
+      width: 450px;
+      position: absolute;
+      display: inline-block;
+      top: -170px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      @include m.mq(tab){
+        top: -70px;
+        width: 350px;
+      }
+      @include m.mq(sp){
+        top: 0;
+        width: 230px;
+        margin-left: 1%;
+        left: -50px;
+      }
+    }
+  }
+  .card{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    img{
+      width: 600px;
+      box-shadow: 0 0 15px #000; 
+      vertical-align: center;
+      @include m.mq(tab){
+        width: 450px;
+      }
+      @include m.mq(sp){
+        width: 100%;
+      }
+      &:nth-of-type(odd){
+        position: absolute;
+        top: 20px;
+        width: 550px;
+        @include m.mq(tab){
+          top: 25px;
+          width: 400px;
+        }
+        @include m.mq(sp){
+          display: none;
+        }
+      }
+      &:nth-of-type(1){
+        z-index:-1;
+        left: 0;
+        &:hover{
+          transform:scale(1.2);
+        }
+      }
+      &:nth-of-type(3){
+        right: 0;
+        z-index:-1;
+
+      }
+    }
+
+  }
+}
+.left_h1{
+  padding-left: 25px !important;
 }
 
