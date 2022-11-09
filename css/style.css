@@ -356,6 +356,11 @@ dl div dt {
   width: 330px;
   font-size: 5.5rem;
 }
+@media screen and (max-width: 1024px) {
+  .appeal h1 {
+    font-size: 5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .appeal h1 {
     width: 100%;
@@ -368,6 +373,11 @@ dl div dt {
   font-size: 2rem;
   line-height: 3.5rem;
   width: 40%;
+}
+@media screen and (max-width: 1024px) {
+  .appeal p {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .appeal p {
@@ -389,7 +399,7 @@ dl div dt {
   position: relative;
   z-index: 999;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .points .sub_pointTitle {
     margin-top: 100px;
   }
@@ -412,6 +422,29 @@ dl div dt {
     padding-top: 90px;
     margin-bottom: -50px;
     padding-left: 0;
+  }
+}
+.points .sub_pointTitle p {
+  font-size: 4rem;
+  text-align: center;
+  padding-left: 430px;
+  margin-top: -50px;
+  font-family: hot-gfkaishokk, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+@media screen and (max-width: 1024px) {
+  .points .sub_pointTitle p {
+    font-size: 3rem;
+    padding-left: 320px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .points .sub_pointTitle p {
+    text-align: left;
+    padding-left: 150px;
+    padding-top: 50px;
+    font-size: 2rem;
   }
 }
 .points .sub_pointTitle img {
@@ -440,7 +473,9 @@ dl div dt {
 .points .card {
   position: relative;
   width: 100%;
+  top: -50px;
   text-align: center;
+  z-index: 1;
 }
 .points .card img {
   width: 600px;
@@ -483,6 +518,11 @@ dl div dt {
 .points .card img:nth-of-type(3) {
   right: 0;
   z-index: -1;
+  transition: 1s;
+}
+.points .card img:nth-of-type(3):hover {
+  z-index: 100;
+  transform: translateX(-100px) scale(1.1);
 }
 
 .left_h1 {

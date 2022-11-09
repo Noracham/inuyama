@@ -194,6 +194,9 @@ dl{
   h1{
     width: 330px;
     font-size: 5.5rem;
+    @include m.mq(tab){
+      font-size: 5rem;
+    }
     @include m.mq(sp){
       width: 100%;
       font-size: 4.5rem;
@@ -205,6 +208,9 @@ dl{
     font-size: 2rem;
     line-height: 3.5rem;
     width: 40%;
+    @include m.mq(tab){
+      font-size: 1.5rem;
+    }
     @include m.mq(sp){
       width: 100%;
       align-self: flex-start;
@@ -218,11 +224,12 @@ dl{
   @include m.mq(sp){
     margin: 50px 1%;
   }
+
   .sub_pointTitle{
     margin: 600px 20% 50px 9%;
     position: relative;
     z-index: 999;
-    @include m.mq(sp){
+    @include m.mq(tab){
       margin-top: 100px;
     }
     h1{
@@ -239,6 +246,25 @@ dl{
         padding-top: 90px;
         margin-bottom: -50px;
         padding-left: 0;
+      }
+    }
+    p{
+      font-size: 4rem;
+      text-align: center;
+      padding-left: 430px;
+      margin-top: -50px;
+      font-family: hot-gfkaishokk,sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      @include m.mq(tab){
+        font-size: 3rem;
+        padding-left: 320px;
+      }
+      @include m.mq(sp){
+        text-align: left;
+        padding-left: 150px;
+        padding-top: 50px;
+        font-size: 2rem;
       }
     }
 
@@ -265,7 +291,9 @@ dl{
   .card{
     position: relative;
     width: 100%;
+    top: -50px;
     text-align: center;
+    z-index: 1;
     img{
       width: 600px;
       box-shadow: 0 0 15px #000; 
@@ -298,7 +326,11 @@ dl{
       &:nth-of-type(3){
         right: 0;
         z-index:-1;
-
+        transition: 1s;
+        &:hover{
+          z-index: 100;
+          transform: translateX(-100px) scale(1.1);
+        }
       }
     }
 
