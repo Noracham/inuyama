@@ -116,6 +116,7 @@
   height: 100vh;
 }
 
+
 //news(お知らせ)
 .news{
   background-color: rgba(255, 255, 255, 0.543);
@@ -319,21 +320,26 @@ dl{
       &:nth-of-type(1){
         z-index:-1;
         left: 0;
-        &:hover{
-          transform:scale(1.2);
-        }
       }
       &:nth-of-type(3){
         right: 0;
         z-index:-1;
         transition: 1s;
-        &:hover{
-          z-index: 100;
-          transform: translateX(-100px) scale(1.1);
-        }
       }
     }
-
+    @keyframes left_In {
+      from{
+        transform: translateX(-700px);
+      }
+      to{
+        transform: translateX(0);
+      }
+      
+    }
+    .left_In{
+      animation: left_In forwards ease-in-out;
+      animation-duration: 2s;
+    }
   }
 }
 .left_h1{
