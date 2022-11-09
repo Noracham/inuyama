@@ -335,17 +335,37 @@ dl div dt {
 }
 
 .appeal {
+  position: relative;
   margin: 200px 9%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .appeal {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .appeal h1 {
-  width: 30%;
-  font-size: 4rem;
+  width: 330px;
+  font-size: 5.5rem;
+}
+@media screen and (max-width: 768px) {
+  .appeal h1 {
+    width: 100%;
+    font-size: 4.5rem;
+    align-self: flex-start;
+  }
 }
 .appeal p {
-  padding-top: 1rem;
+  padding-top: 3rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .appeal p {
+    width: 100%;
+    align-self: flex-start;
+  }
 }/*# sourceMappingURL=style.css.map */

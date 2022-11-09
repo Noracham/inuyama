@@ -183,18 +183,33 @@ dl{
 }
 // アピールappeal
 .appeal{
+  position: relative;
   margin: 200px 9%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  @include m.mq(sp){
+    flex-direction: column;
+    align-items: center;
+  }
   h1{
-    width: 30%;
-    font-size: 4rem;
+    width: 330px;
+    font-size: 5.5rem;
+    @include m.mq(sp){
+      width: 100%;
+      font-size: 4.5rem;
+      align-self: flex-start;
+    }
   }
   p{
-    padding-top: 1rem;
+    padding-top: 3rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
     width: 40%;
+    @include m.mq(sp){
+      width: 100%;
+      align-self: flex-start;
+
+    }
   }
 }
 
