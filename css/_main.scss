@@ -119,14 +119,13 @@
 //news(お知らせ)
 .news{
   background-color: rgba(255, 255, 255, 0.543);
-  margin: 100px 9%;
+  margin: 200px 9%;
   border-radius: 3%;
   @include m.mq(sp){
     margin: 100px 1%;
   }
   .subtitle{
       padding-top: 50px;
-      margin-top: 200px;
       position: relative;
       font-family: hot-gfkaishokk,sans-serif;
       font-weight: 800;
