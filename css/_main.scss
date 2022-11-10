@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as v;
 @use "mixin" as m;
 //main
 .main_visu {
@@ -16,26 +16,25 @@
     width: 35px;
     height: 35px;
     z-index: 999;
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       left: 85px;
     }
-    img{
+    img {
       width: 100%;
     }
-
   }
   .logo_visu {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    top: -10px;
+    top: -8px;
     width: 100%;
     height: 100%;
     // margin: 0 auto;
     animation: main_In forwards;
-    animation-delay: .5s;
-    animation-duration: .8s;
+    animation-delay: 0.5s;
+    animation-duration: 0.8s;
     opacity: 0;
 
     @keyframes main_In {
@@ -52,18 +51,17 @@
       background-color: rgb(240, 241, 229);
       box-shadow: 0 0 15px rgb(240, 241, 229);
       border-radius: 0;
-      padding: 2% 5%;
+      padding: 3% 5%;
       width: 300px;
       height: auto;
       object-fit: cover;
       // filter: brightness(100%);
-      @include m.mq(tab){
+      @include m.mq(tab) {
         width: 250px;
       }
-      @include m.mq(sp){
-        width: 200px;
+      @include m.mq(sp) {
+        width: 190px;
       }
-
     }
   }
   .menu {
@@ -71,7 +69,7 @@
     top: 0;
     right: 0;
     z-index: 999;
-    @include m.mq(sp){
+    @include m.mq(sp) {
       top: 150px;
     }
     li {
@@ -116,132 +114,132 @@
   height: 100vh;
 }
 
-
 //news(お知らせ)
-.news{
-  background-color: rgba(255, 255, 255, 0.543);
+.news {
+  background-color: v.$bg_color;
   margin: 200px 9%;
   border-radius: 3%;
-  @include m.mq(sp){
+  @include m.mq(sp) {
     margin: 100px 1%;
   }
-  .subtitle{
-      padding-top: 50px;
-      position: relative;
-      font-family: hot-gfkaishokk,sans-serif;
-      font-weight: 800;
-      font-style: normal;
-      font-size: 5rem;
-      text-align: center;
-      @include m.mq(sp){
-        font-size: 4rem;
-      }  
-      &::after{
-          content: "";
-          width: 350px;
-          height: 100px;
-          display: inline-block;
-          background-image: url(../img/subtitlebar.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          text-align: center;
-          position: absolute;
-          margin: auto;
-          left: 0;
-          right: 0;
-          top: 105px;
-          @include m.mq(sp){
-            width: 250px;
-            height: 70px;
-            top: 90px;
-          }      
-      }
+}
+.subtitle {
+  padding-top: 50px;
+  position: relative;
+  font-family: hot-gfkaishokk, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 5rem;
+  text-align: center;
+  @include m.mq(sp) {
+    font-size: 4rem;
+  }
+  &::after {
+    content: "";
+    width: 350px;
+    height: 100px;
+    display: inline-block;
+    background-image: url(../img/subtitlebar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 105px;
+    @include m.mq(sp) {
+      width: 250px;
+      height: 70px;
+      top: 90px;
+    }
   }
 }
-dl{
+
+dl {
   font-size: 1.5rem;
   padding: 100px 0;
-  div{
-      display: flex;
-      justify-content: flex-start;
-      padding-top: 50px;
-      justify-content: space-around;
-      border-bottom: 1px solid #000;
-      margin: 0 15%;
-      @include m.mq(sp){
-        margin: 0 5%;
-      }  
-      &:first-child{
-          padding: 0;
-      }
-      dd{
-        margin-right: auto;
-      }
-      dt{
-        margin-right: 5%;
-      }
+  div {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+    justify-content: space-around;
+    border-bottom: 1px solid #000;
+    margin: 0 15%;
+    @include m.mq(sp) {
+      margin: 0 5%;
+    }
+    &:first-child {
+      padding: 0;
+    }
+    dd {
+      margin-right: auto;
+    }
+    dt {
+      margin-right: 5%;
+    }
   }
 }
 // アピールappeal
-.appeal{
+.appeal {
   position: relative;
   margin: 400px 9% 200px;
   display: flex;
   justify-content: space-around;
-  @include m.mq(sp){
+  @include m.mq(sp) {
     flex-direction: column;
     align-items: center;
   }
-  h1{
+  h1 {
     width: 330px;
     font-size: 5.5rem;
-    @include m.mq(tab){
+    @include m.mq(tab) {
       font-size: 5rem;
     }
-    @include m.mq(sp){
+    @include m.mq(sp) {
       width: 100%;
       font-size: 4.5rem;
-      align-self: flex-start;      
+      align-self: flex-start;
     }
   }
-  p{
+  p {
     padding-top: 3rem;
     font-size: 2rem;
     line-height: 3.5rem;
     width: 40%;
-    @include m.mq(tab){
+    @include m.mq(tab) {
       font-size: 1.5rem;
+      line-height: 3rem;
     }
-    @include m.mq(sp){
+    @include m.mq(sp) {
       width: 100%;
       align-self: flex-start;
-
     }
   }
 }
 //pointポイント
-.points{
+.points {
   margin: 200px 5%;
-  @include m.mq(sp){
+  @include m.mq(sp) {
     margin: 50px 1%;
   }
 
-  .sub_pointTitle{
-    margin: 600px 20% 50px 9%;
+  .sub_pointTitle {
+    margin: 300px 20% 50px 9%;
     position: relative;
     z-index: 999;
-    @include m.mq(tab){
+    @include m.mq(tab) {
       margin-top: 100px;
     }
-    h1{
+    h1 {
       font-size: 7rem;
       text-align: center;
-      @include m.mq(tab){
+      @include m.mq(tab) {
         padding-top: 75px;
         font-size: 5.5rem;
         padding-right: 23px;
       }
-      @include m.mq(sp){
+      @include m.mq(sp) {
         font-size: 4rem;
         text-align: left;
         padding-top: 90px;
@@ -249,19 +247,19 @@ dl{
         padding-left: 0;
       }
     }
-    p{
+    p {
       font-size: 4rem;
       text-align: center;
       padding-left: 430px;
       margin-top: -50px;
-      font-family: hot-gfkaishokk,sans-serif;
+      font-family: hot-gfkaishokk, sans-serif;
       font-weight: 800;
       font-style: normal;
-      @include m.mq(tab){
+      @include m.mq(tab) {
         font-size: 3rem;
         padding-left: 320px;
       }
-      @include m.mq(sp){
+      @include m.mq(sp) {
         text-align: left;
         padding-left: 150px;
         padding-top: 50px;
@@ -269,7 +267,7 @@ dl{
       }
     }
 
-    img{
+    img {
       width: 450px;
       position: absolute;
       display: inline-block;
@@ -277,11 +275,11 @@ dl{
       left: 0;
       right: 0;
       margin: auto;
-      @include m.mq(tab){
+      @include m.mq(tab) {
         top: -70px;
         width: 350px;
       }
-      @include m.mq(sp){
+      @include m.mq(sp) {
         top: 0;
         width: 230px;
         margin-left: 1%;
@@ -289,60 +287,115 @@ dl{
       }
     }
   }
-  .card{
+  .card {
     position: relative;
     width: 100%;
     top: -50px;
     text-align: center;
     z-index: 1;
-    img{
+    img {
+      opacity: 0;
       width: 600px;
-      box-shadow: 0 0 15px #000; 
+      box-shadow: 0 0 15px #000;
       vertical-align: center;
-      @include m.mq(tab){
+      @include m.mq(tab) {
         width: 450px;
       }
-      @include m.mq(sp){
+      @include m.mq(sp) {
         width: 100%;
       }
-      &:nth-of-type(odd){
+      &:nth-of-type(odd) {
         position: absolute;
         top: 20px;
         width: 550px;
-        @include m.mq(tab){
+        @include m.mq(tab) {
           top: 25px;
           width: 400px;
         }
-        @include m.mq(sp){
+        @include m.mq(sp) {
           display: none;
         }
       }
-      &:nth-of-type(1){
-        z-index:-1;
+      &:nth-of-type(1) {
+        z-index: -1;
         left: 0;
       }
-      &:nth-of-type(3){
+      &:nth-of-type(3) {
         right: 0;
-        z-index:-1;
-        transition: 1s;
+        z-index: -1;
       }
-    }
-    @keyframes left_In {
-      from{
-        transform: translateX(-700px);
-      }
-      to{
-        transform: translateX(0);
-      }
-      
-    }
-    .left_In{
-      animation: left_In forwards ease-in-out;
-      animation-duration: 2s;
     }
   }
 }
-.left_h1{
+@keyframes center_In {
+  from {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.center_In {
+  animation: center_In forwards;
+  animation-duration: 1s;
+}
+@keyframes right_In {
+  from {
+    opacity: 0;
+    transform: translateX(150px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.r_In {
+  animation: right_In forwards ease-out;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+.left_h1 {
   padding-left: 25px !important;
 }
 
+@keyframes left_In {
+  from {
+    transform: translateX(-150px) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+.left_In {
+  animation: left_In forwards ease-out;
+  animation-duration: 1s;
+  animation-delay: 0.25s;
+}
+
+// shops
+.shops{
+  background-color: v.$bg_color;
+}
+.all_shop{
+  width: 100%;
+  margin: 200px 9%;
+  .some_shop{
+    width: 40%;
+    height: auto;
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+    .shop_info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.195);
+    }
+  }
+}

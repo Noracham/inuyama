@@ -144,7 +144,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   position: absolute;
-  top: -10px;
+  top: -8px;
   width: 100%;
   height: 100%;
   -webkit-animation: main_In forwards;
@@ -179,7 +179,7 @@ header {
   background-color: rgb(240, 241, 229);
   box-shadow: 0 0 15px rgb(240, 241, 229);
   border-radius: 0;
-  padding: 2% 5%;
+  padding: 3% 5%;
   width: 300px;
   height: auto;
   -o-object-fit: cover;
@@ -192,7 +192,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .main_visu .logo_visu img {
-    width: 200px;
+    width: 190px;
   }
 }
 .main_visu .menu {
@@ -276,7 +276,8 @@ header {
     margin: 100px 1%;
   }
 }
-.news .subtitle {
+
+.subtitle {
   padding-top: 50px;
   position: relative;
   font-family: hot-gfkaishokk, sans-serif;
@@ -286,11 +287,11 @@ header {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .news .subtitle {
+  .subtitle {
     font-size: 4rem;
   }
 }
-.news .subtitle::after {
+.subtitle::after {
   content: "";
   width: 350px;
   height: 100px;
@@ -306,7 +307,7 @@ header {
   top: 105px;
 }
 @media screen and (max-width: 768px) {
-  .news .subtitle::after {
+  .subtitle::after {
     width: 250px;
     height: 70px;
     top: 90px;
@@ -377,6 +378,7 @@ dl div dt {
 @media screen and (max-width: 1024px) {
   .appeal p {
     font-size: 1.5rem;
+    line-height: 3rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -395,7 +397,7 @@ dl div dt {
   }
 }
 .points .sub_pointTitle {
-  margin: 600px 20% 50px 9%;
+  margin: 300px 20% 50px 9%;
   position: relative;
   z-index: 999;
 }
@@ -478,6 +480,7 @@ dl div dt {
   z-index: 1;
 }
 .points .card img {
+  opacity: 0;
   width: 600px;
   box-shadow: 0 0 15px #000;
   vertical-align: center;
@@ -515,31 +518,121 @@ dl div dt {
 .points .card img:nth-of-type(3) {
   right: 0;
   z-index: -1;
-  transition: 1s;
 }
-@-webkit-keyframes left_In {
+
+@-webkit-keyframes center_In {
   from {
-    transform: translateX(-700px);
+    opacity: 0;
+    transform: translateY(-100px) scale(0.8);
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0) scale(1);
   }
 }
-@keyframes left_In {
+
+@keyframes center_In {
   from {
-    transform: translateX(-700px);
+    opacity: 0;
+    transform: translateY(-100px) scale(0.8);
   }
   to {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0) scale(1);
   }
 }
-.points .card .left_In {
-  -webkit-animation: left_In forwards ease-in-out;
-          animation: left_In forwards ease-in-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+.center_In {
+  -webkit-animation: center_In forwards;
+          animation: center_In forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes right_In {
+  from {
+    opacity: 0;
+    transform: translateX(150px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes right_In {
+  from {
+    opacity: 0;
+    transform: translateX(150px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.r_In {
+  -webkit-animation: right_In forwards ease-out;
+          animation: right_In forwards ease-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .left_h1 {
   padding-left: 25px !important;
+}
+
+@-webkit-keyframes left_In {
+  from {
+    transform: translateX(-150px) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes left_In {
+  from {
+    transform: translateX(-150px) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+.left_In {
+  -webkit-animation: left_In forwards ease-out;
+          animation: left_In forwards ease-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.shops {
+  background-color: rgba(255, 255, 255, 0.543);
+}
+
+.all_shop {
+  width: 100%;
+  margin: 200px 9%;
+}
+.all_shop .some_shop {
+  width: 40%;
+  height: auto;
+}
+.all_shop .some_shop img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.all_shop .some_shop .shop_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.195);
 }/*# sourceMappingURL=style.css.map */
