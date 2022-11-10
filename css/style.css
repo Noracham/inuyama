@@ -2,7 +2,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", YuGothic, "Yu Gothic", sans-serif;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "メイリオ", Meiryo, sans-serif;
   max-width: 100vw;
 }
 
@@ -614,25 +614,123 @@ dl div dt {
 
 .shops {
   background-color: rgba(255, 255, 255, 0.543);
+  margin-top: 200px;
 }
 
 .all_shop {
-  width: 100%;
-  margin: 200px 9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 100vw;
+  margin: 150px 9%;
+  padding-bottom: 10%;
+}
+@media screen and (max-width: 768px) {
+  .all_shop {
+    width: 100%;
+    margin: 100px 0;
+  }
 }
 .all_shop .some_shop {
-  width: 40%;
-  height: auto;
+  position: relative;
+  width: 45%;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 768px) {
+  .all_shop .some_shop {
+    width: 100%;
+    height: 80vh;
+  }
 }
 .all_shop .some_shop img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 768px) {
+  .all_shop .some_shop img {
+    height: 100%;
+    overflow-x: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .all_shop .some_shop .shop_info {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  margin: auto;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
-  background-color: rgba(0, 0, 0, 0.195);
+  max-width: 275px;
+  min-width: 200px;
+  background-color: rgba(82, 82, 82, 0.722);
+}
+@media screen and (max-width: 768px) {
+  .all_shop .some_shop .shop_info {
+    width: 100%;
+    max-width: 999px;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+  }
+}
+.all_shop .some_shop .shop_info h2 {
+  font-size: 2.2rem;
+  margin: 5% 0;
+}
+@media screen and (max-width: 1024px) {
+  .all_shop .some_shop .shop_info h2 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all_shop .some_shop .shop_info h2 {
+    font-size: 2.2rem;
+  }
+}
+.all_shop .some_shop .shop_info p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+@media screen and (max-width: 1024px) {
+  .all_shop .some_shop .shop_info p {
+    font-size: 0.9rem;
+  }
+}
+
+.genre {
+  width: 60%;
+  min-width: 150px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 768px) {
+  .genre {
+    margin: 3% 0;
+  }
+}
+.genre span {
+  color: #fff;
+  font-weight: bold;
+  background: #000;
+  padding: 2% 0;
+  margin: 0 2px;
+  font-size: 1rem;
+  width: 30%;
+  text-align: center;
+  max-width: 90px;
+  min-width: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .genre span {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
