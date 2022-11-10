@@ -188,6 +188,7 @@ dl {
   display: flex;
   justify-content: space-around;
   @include m.mq(sp) {
+    margin-top: 200px;
     flex-direction: column;
     align-items: center;
   }
