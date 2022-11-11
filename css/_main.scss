@@ -484,16 +484,27 @@ dl {
 
 // floormap
 .floormap{
+  margin-top: 200px;
   background-color: v.$bg_color;
   .maps{
     margin-top: 7%;
     width: 100%;
     display: flex;
     justify-content: center;
+    @include m.mq(sp){
+      flex-direction: column;
+      align-items: center;
+    }
     .hand_map{
       width: 40%;
       background-color: #fff;
       margin-right: 2%;
+      box-shadow: 0 0 15px #000;
+      @include m.mq(sp){
+        margin-top: 5%;
+        width: 98%;
+        margin-right: 0;
+      }
       img{
         width: 100%;
       }
@@ -503,6 +514,10 @@ dl {
       flex-direction: column;
       align-items: center;
       width: 40%;
+      @include m.mq(sp){
+        margin-top: 5%;
+        width: 98%;
+      }
       iframe{
         width: 100%;
         aspect-ratio: 3/4.5;
@@ -520,4 +535,9 @@ dl {
       }
     }  
   }
+}
+// footer
+footer{
+  width: 100%;
+  background-color: #341800;
 }

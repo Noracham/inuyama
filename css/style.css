@@ -738,6 +738,7 @@ dl div dt {
 }
 
 .floormap {
+  margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.543);
 }
 .floormap .maps {
@@ -746,10 +747,24 @@ dl div dt {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .floormap .maps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .floormap .maps .hand_map {
   width: 40%;
   background-color: #fff;
   margin-right: 2%;
+  box-shadow: 0 0 15px #000;
+}
+@media screen and (max-width: 768px) {
+  .floormap .maps .hand_map {
+    margin-top: 5%;
+    width: 98%;
+    margin-right: 0;
+  }
 }
 .floormap .maps .hand_map img {
   width: 100%;
@@ -759,6 +774,12 @@ dl div dt {
   flex-direction: column;
   align-items: center;
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .floormap .maps .g_map {
+    margin-top: 5%;
+    width: 98%;
+  }
 }
 .floormap .maps .g_map iframe {
   width: 100%;
@@ -774,4 +795,9 @@ dl div dt {
   margin-top: 50px;
   padding: 15px 20px;
   border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: #341800;
 }/*# sourceMappingURL=style.css.map */
