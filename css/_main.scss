@@ -399,6 +399,8 @@ dl {
     position: relative;
     width: 45%;
     margin-bottom: 5%;
+    box-shadow: 0 0 15px #000;
+
     @include m.mq(sp){
       width: 100%;
       height: 80vh;
@@ -477,5 +479,45 @@ dl {
     @include m.mq(tab){
       font-size: 0.8rem;
     }
+  }
+}
+
+// floormap
+.floormap{
+  background-color: v.$bg_color;
+  .maps{
+    margin-top: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .hand_map{
+      width: 40%;
+      background-color: #fff;
+      margin-right: 2%;
+      img{
+        width: 100%;
+      }
+    }
+    .g_map{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+      iframe{
+        width: 100%;
+        aspect-ratio: 3/4.5;
+        box-shadow: 0 0 15px #000;
+      }
+      a{
+        width: 195px;
+        font-family: hot-gfkaishokk, sans-serif;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.727);
+        font-size: 2.7rem;
+        margin-top: 50px;
+        padding: 15px 20px;
+        border-radius: 5px;
+      }
+    }  
   }
 }

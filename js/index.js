@@ -25,13 +25,6 @@ $(function(){
     let windowSize = $(window).height();
     console.log(windowSize);
 
-    // アニメーションの配列
-    sideFadeInAnimation = [
-        "#card1",
-        "#card2",
-        "#card3"
-    ]
-
     $(window).scroll(function () { 
         let scrollPosition = $(this).scrollTop();
         // console.log(scrollPosition);
@@ -73,4 +66,12 @@ $(function(){
     });
 
 
+    //googlemap resize
+    // let win_width = $(window).width();
+    // if(win_width <= 1024){
+    //     $("#g_map").prop({
+    //         "width":"300",
+    //         "height":"213"
+    //     })
+    // }
 })

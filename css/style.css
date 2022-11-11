@@ -637,6 +637,7 @@ dl div dt {
   position: relative;
   width: 45%;
   margin-bottom: 5%;
+  box-shadow: 0 0 15px #000;
 }
 @media screen and (max-width: 768px) {
   .all_shop .some_shop {
@@ -734,4 +735,43 @@ dl div dt {
   .genre span {
     font-size: 0.8rem;
   }
+}
+
+.floormap {
+  background-color: rgba(255, 255, 255, 0.543);
+}
+.floormap .maps {
+  margin-top: 7%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.floormap .maps .hand_map {
+  width: 40%;
+  background-color: #fff;
+  margin-right: 2%;
+}
+.floormap .maps .hand_map img {
+  width: 100%;
+}
+.floormap .maps .g_map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+.floormap .maps .g_map iframe {
+  width: 100%;
+  aspect-ratio: 3/4.5;
+  box-shadow: 0 0 15px #000;
+}
+.floormap .maps .g_map a {
+  width: 195px;
+  font-family: hot-gfkaishokk, sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.727);
+  font-size: 2.7rem;
+  margin-top: 50px;
+  padding: 15px 20px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
