@@ -43,7 +43,7 @@ h1 {
   margin: 200px 9%;
 }
 
-.visible {
+.v_inblur {
   opacity: 0;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
@@ -74,6 +74,40 @@ h1 {
   to {
     opacity: 1;
     filter: blur(0);
+  }
+}
+
+.v_inup {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.visible_inup {
+  -webkit-animation-name: visible_inup;
+          animation-name: visible_inup;
+  transition: 0.5s;
+}
+@-webkit-keyframes visible_inup {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes visible_inup {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -689,7 +723,7 @@ dl div dt {
 }
 @media screen and (max-width: 768px) {
   .all_shop .some_shop img {
-    height: 100%;
+    height: 60vh;
     overflow-x: hidden;
     -o-object-fit: cover;
        object-fit: cover;

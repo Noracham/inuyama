@@ -67,13 +67,16 @@ $(function(){
             }
     });
     // scrollevent2 inview
-    $(".visible").on("inview",function(event,isInView){
+    $(".v_inblur").on("inview",function(event,isInView){
         if(isInView){
             $(this).addClass("visible_blur")
         }else{
 
         }
     });
+    $(".v_inup").one("inview",function(event,isInView){
+        $(this).addClass("visible_inup")
+    })
     
 
 
