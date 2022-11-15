@@ -342,6 +342,7 @@ dl {
 .center_In {
   animation: center_In forwards;
   animation-duration: 1s;
+  animation-delay: .5s;
 }
 @keyframes right_In {
   from {
@@ -356,7 +357,7 @@ dl {
 .r_In {
   animation: right_In forwards ease-out;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 1.0s;
 }
 .left_h1 {
   padding-left: 25px !important;
@@ -375,7 +376,7 @@ dl {
 .left_In {
   animation: left_In forwards ease-out;
   animation-duration: 1s;
-  animation-delay: 0.25s;
+  animation-delay: .75s;
 }
 
 // shops
@@ -403,10 +404,10 @@ dl {
 
     @include m.mq(sp){
       width: 100%;
-      height: 80vh;
     }
     img{
       width: 100%;
+      height: auto;
       object-fit: contain;
       @include m.mq(sp){
         height: 100%;
@@ -488,6 +489,7 @@ dl {
   background-color: v.$bg_color;
   .maps{
     margin-top: 7%;
+    padding-bottom: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -521,13 +523,13 @@ dl {
       iframe{
         width: 100%;
         aspect-ratio: 3/4.5;
-        box-shadow: 0 0 15px #000;
+        box-shadow: 0 0 10px #000;
       }
       a{
         width: 195px;
         font-family: hot-gfkaishokk, sans-serif;
         color: #fff;
-        background-color: rgba(0, 0, 0, 0.727);
+        background-color: rgb(0, 0, 0);
         font-size: 2.7rem;
         margin-top: 50px;
         padding: 15px 20px;
@@ -538,6 +540,30 @@ dl {
 }
 // footer
 footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin-top: 200px;
   background-color: #341800;
+  .com_info{
+    margin: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    align-self: flex-start;
+  }
+  .f_logo{
+    width: 300px;
+    padding: 50px 0;
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .f_link{
+    align-self: flex-end;
+    img{
+      padding:10px;
+    }
+  }
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vegas.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <title></title>
+    <title>てんしゃ</title>
     <script>
         (function(d) {
           var config = {
@@ -30,7 +30,7 @@
         <ul class="menu">
             <li><a href="#news">お知らせ</a></li>
             <li><a href="#shops">出店一覧</a></li>
-            <li><a href="#">フロアマップ</a></li>
+            <li><a href="#floormap">フロアマップ</a></li>
         </ul>
         <div class="link_icon"><img src="img/Icon awesome-instagram.png" alt=""></div>
         <div class="link_icon"><img src="img/Icon_map.png" alt=""></div>
@@ -55,8 +55,8 @@
         <p>犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて全５店営業中。犬山城下町にて</p>
     </section>
     <div class="points">
-        <div class="sub_pointTitle">
-            <h1>食べる</h1><p>もよし</p>
+        <div class="sub_pointTitle visible">
+            <h1 class="">食べる</h1><p class="">もよし</p>
             <img src="img/title_circle.png" alt="">
         </div>
         <div class="card" id="card1">
@@ -64,8 +64,8 @@
         </div>
     </div>
     <div class="points">
-        <div class="sub_pointTitle">
-            <h1 class="left_h1">飲む</h1><p>もよし</p>
+        <div class="sub_pointTitle visible">
+            <h1 class="left_h1 ">飲む</h1><p class="">もよし</p>
             <img src="img/title_circle.png" alt="">
         </div>
         <div class="card" id="card2">
@@ -73,8 +73,8 @@
         </div>
     </div>
     <div class="points">
-        <div class="sub_pointTitle">
-            <h1 class="left_h1">遊ぶ</h1><p>もよし</p>
+        <div class="sub_pointTitle visible">
+            <h1 class="left_h1 ">遊ぶ</h1><p class="">もよし</p>
             <img src="img/title_circle.png" alt="">
         </div>
         <div class="card" id="card3">
@@ -132,7 +132,7 @@
 
         </div>
     </section>
-    <section class="floormap">
+    <section class="floormap" id="floormap">
         <h1 class="subtitle">フロアマップ</h1>
         <div class="maps">
             <div class="hand_map"><img src="img/hand_map.png" alt=""></div>
@@ -141,11 +141,22 @@
     </section>
 
     <footer>
-        
+        <div class="com_info">
+            <p>愛知県犬山市〇〇町　00-00</p>
+            <p>営業時間　10:00-17:00</p>
+            <p>定休日　土日祝</p>
+        </div>
+
+        <div class="f_logo"><img src="img/inuyama_logo_long.png" alt="てんしゃ"></div>
+        <div class="f_link">
+            <img src="img/Icon awesome-instagram.png" alt="instagram">
+            <img src="img/Icon_map.png" alt="">
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="js/vegas.min.js"></script>       
+    <script src="js/vegas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>       
     <script src="js/index.js"></script>
     
     

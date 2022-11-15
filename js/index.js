@@ -22,6 +22,8 @@ $(function(){
     });
 
     //scroll event
+
+
     let windowSize = $(window).height();
     console.log(windowSize);
 
@@ -64,6 +66,15 @@ $(function(){
                 $("#card3 img:nth-of-type(3)").addClass("r_In");
             }
     });
+    // scrollevent2 inview
+    $(".visible").on("inview",function(event,isInView){
+        if(isInView){
+            $(this).addClass("visible_blur")
+        }else{
+
+        }
+    });
+    
 
 
     //googlemap resize
