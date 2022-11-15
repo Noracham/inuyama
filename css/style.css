@@ -877,15 +877,31 @@ footer {
   margin-top: 200px;
   background-color: #341800;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
 footer .com_info {
   margin: 10px;
   color: #fff;
   font-size: 1.5rem;
   align-self: flex-start;
 }
+@media screen and (max-width: 768px) {
+  footer .com_info {
+    font-size: 1rem;
+  }
+}
 footer .f_logo {
   width: 300px;
   padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  footer .f_logo {
+    width: 200px;
+    padding: 0;
+  }
 }
 footer .f_logo img {
   width: 100%;
@@ -895,6 +911,20 @@ footer .f_logo img {
 footer .f_link {
   align-self: flex-end;
 }
+@media screen and (max-width: 768px) {
+  footer .f_link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
 footer .f_link img {
   padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  footer .f_link img {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

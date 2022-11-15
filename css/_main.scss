@@ -546,15 +546,25 @@ footer{
   width: 100%;
   margin-top: 200px;
   background-color: #341800;
+  @include m.mq(sp){
+    flex-direction: column;
+  }
   .com_info{
     margin: 10px;
     color: #fff;
     font-size: 1.5rem;
     align-self: flex-start;
+    @include m.mq(sp){
+      font-size: 1rem;
+    }
   }
   .f_logo{
     width: 300px;
     padding: 50px 0;
+    @include m.mq(sp){
+      width: 200px;
+      padding: 0;
+    }
     img{
       width: 100%;
       object-fit: contain;
@@ -562,8 +572,18 @@ footer{
   }
   .f_link{
     align-self: flex-end;
+    @include m.mq(sp){
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
     img{
       padding:10px;
+      @include m.mq(sp){
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }
