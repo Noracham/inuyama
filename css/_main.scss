@@ -342,7 +342,7 @@ dl {
 .center_In {
   animation: center_In forwards;
   animation-duration: 1s;
-  animation-delay: .5s;
+  animation-delay: .25s;
 }
 @keyframes right_In {
   from {
@@ -357,7 +357,7 @@ dl {
 .r_In {
   animation: right_In forwards ease-out;
   animation-duration: 1s;
-  animation-delay: 1.0s;
+  animation-delay: .75s;
 }
 .left_h1 {
   padding-left: 25px !important;
@@ -376,7 +376,7 @@ dl {
 .left_In {
   animation: left_In forwards ease-out;
   animation-duration: 1s;
-  animation-delay: .75s;
+  animation-delay: .5s;
 }
 
 // shops

@@ -616,8 +616,8 @@ dl div dt {
           animation: center_In forwards;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 @-webkit-keyframes right_In {
@@ -646,8 +646,8 @@ dl div dt {
           animation: right_In forwards ease-out;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
 .left_h1 {
@@ -680,8 +680,8 @@ dl div dt {
           animation: left_In forwards ease-out;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .shops {
