@@ -208,7 +208,7 @@ dl {
     padding-top: 3rem;
     font-size: 2rem;
     line-height: 3.5rem;
-    width: 40%;
+    width: 45%;
     @include m.mq(tab) {
       font-size: 1.5rem;
       line-height: 3rem;
@@ -381,8 +381,14 @@ dl {
 
 // shops
 .shops{
+  border-radius: 3%;
+
   background-color: v.$bg_color;
   margin-top: 200px;
+  margin: 200px 5% 0;
+  @include m.mq(sp){
+    margin: 200px 0 0;
+  }
 }
 .all_shop{
   display: flex;
@@ -485,10 +491,16 @@ dl {
 
 // floormap
 .floormap{
+  border-radius: 3%;
+
   margin-top: 200px;
+  margin: 200px 5% 0;
   background-color: v.$bg_color;
+  @include m.mq(sp){
+    margin: 200px 0 0;
+  }
   .maps{
-    margin-top: 7%;
+    margin-top: 15%;
     padding-bottom: 10%;
     width: 100%;
     display: flex;
@@ -526,13 +538,16 @@ dl {
         box-shadow: 0 0 10px #000;
       }
       a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 195px;
         font-family: hot-gfkaishokk, sans-serif;
         color: #fff;
         background-color: rgb(0, 0, 0);
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         margin-top: 50px;
-        padding: 15px 20px;
+        padding: 25px 15px;
         border-radius: 5px;
       }
     }  
