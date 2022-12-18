@@ -21,51 +21,16 @@ $(function(){
         overlay: './img/09.png'
     });
 
-    //scroll event
+    //appeal
+    let n_width = $(window).width();
+    $(window).on("click",function(){
 
+        console.log(n_width);
+    })
+    if(n_width < 768){
+        $(".appeal_txt h1").html("<h1>犬山城下町で<br>食と遊びを届ける</h1>");
+    }
 
-    let windowSize = $(window).height();
-    console.log(windowSize);
-
-    $(window).scroll(function () { 
-        let scrollPosition = $(this).scrollTop();
-        // console.log(scrollPosition);
-
-            var offset = $("#card1").offset();
-            var top = offset.top;
-            
-            if(scrollPosition > top - windowSize + 100){
-                $("#card1 img:nth-of-type(1)").addClass("left_In");
-                $("#card1 img:nth-of-type(2)").addClass("center_In");
-                $("#card1 img:nth-of-type(3)").addClass("r_In");
-            }
-    });
-    $(window).scroll(function () { 
-        let scrollPosition = $(this).scrollTop();
-        // console.log(scrollPosition);
-
-            var offset = $("#card2").offset();
-            var top = offset.top;
-            
-            if(scrollPosition > top - windowSize + 100){
-                $("#card2 img:nth-of-type(1)").addClass("left_In");
-                $("#card2 img:nth-of-type(2)").addClass("center_In");
-                $("#card2 img:nth-of-type(3)").addClass("r_In");
-            }
-    });
-    $(window).scroll(function () { 
-        let scrollPosition = $(this).scrollTop();
-        // console.log(scrollPosition);
-
-            var offset = $("#card3").offset();
-            var top = offset.top;
-            
-            if(scrollPosition > top - windowSize + 100){
-                $("#card3 img:nth-of-type(1)").addClass("left_In");
-                $("#card3 img:nth-of-type(2)").addClass("center_In");
-                $("#card3 img:nth-of-type(3)").addClass("r_In");
-            }
-    });
     // scrollevent2 inview
     $(".v_inblur").on("inview",function(event,isInView){
         if(isInView){

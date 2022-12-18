@@ -182,40 +182,76 @@ dl {
   }
 }
 // アピールappeal
-.appeal {
-  position: relative;
-  margin: 400px 9% 200px;
-  display: flex;
-  justify-content: space-around;
-  @include m.mq(sp) {
-    margin-top: 200px;
-    flex-direction: column;
-    align-items: center;
+.appeal{
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 40%;
+  @include m.mq(sp){
+    padding-bottom: 60%;
   }
-  h1 {
-    width: 330px;
-    font-size: 5.5rem;
-    @include m.mq(tab) {
-      font-size: 5rem;
+  .appeal_txt{
+    padding: 200px 0;
+    background-image: url(../img/tensya_square.png);
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include m.mq(sp){
+      padding: 150px 0;
     }
-    @include m.mq(sp) {
-      width: 100%;
-      font-size: 4.5rem;
-      align-self: flex-start;
+    h1{
+      font-size: 6rem;
+      text-align: center;
+      @include m.mq(sp){
+        font-size: 4rem;
+      }
+    }
+    p{
+      font-size: 2rem;
+      line-height: 4rem;
+      text-align: center;
+      @include m.mq(sp){
+        font-size: 1.7rem;
+        line-height: 3.5rem;
+        margin: 0 5%;
+      }
     }
   }
-  p {
-    padding-top: 3rem;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    width: 45%;
-    @include m.mq(tab) {
-      font-size: 1.5rem;
-      line-height: 3rem;
+  .appeal_img{
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: -15%;
+    height: 200%;
+    @include m.mq(sp){
+      margin-top: 5%;
     }
-    @include m.mq(sp) {
-      width: 100%;
-      align-self: flex-start;
+    @include m.mq(sp){
+      margin-left: -7%;
+    }
+    .ap_i{
+      &:nth-of-type(1){
+        width: 60%;
+        z-index: 2;
+        @include m.mq(sp){
+          width: 80%;
+        }
+      }
+      &:nth-of-type(2){
+        bottom: -40%;
+        right: 10%;
+        position: absolute;
+        width: 40%;
+        @include m.mq(sp){
+          width: 60%;
+          right: 3%;
+        }
+      }
+      img{
+        width: 100%;
+      }
     }
   }
 }

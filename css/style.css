@@ -1,8 +1,7 @@
-@charset "UTF-8";
 html {
+  font-family: yamamotoan-classic-stdn, sans-serif;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "メイリオ", Meiryo, sans-serif;
   max-width: 100vw;
   scroll-behavior: smooth;
 }
@@ -32,7 +31,6 @@ a {
 }
 
 h1 {
-  font-family: hot-gfkaishokk, sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -126,10 +124,10 @@ header {
   padding-left: 70px;
 }
 .main_logo img {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .openbtn {
@@ -411,51 +409,91 @@ dl div dt {
 }
 
 .appeal {
-  position: relative;
-  margin: 400px 9% 200px;
-  display: flex;
-  justify-content: space-around;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 40%;
 }
 @media screen and (max-width: 768px) {
   .appeal {
-    margin-top: 200px;
-    flex-direction: column;
-    align-items: center;
+    padding-bottom: 60%;
   }
 }
-.appeal h1 {
-  width: 330px;
-  font-size: 5.5rem;
-}
-@media screen and (max-width: 1024px) {
-  .appeal h1 {
-    font-size: 5rem;
-  }
+.appeal .appeal_txt {
+  padding: 200px 0;
+  background-image: url(../img/tensya_square.png);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
-  .appeal h1 {
-    width: 100%;
-    font-size: 4.5rem;
-    align-self: flex-start;
+  .appeal .appeal_txt {
+    padding: 150px 0;
   }
 }
-.appeal p {
-  padding-top: 3rem;
+.appeal .appeal_txt h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .appeal .appeal_txt h1 {
+    font-size: 4rem;
+  }
+}
+.appeal .appeal_txt p {
   font-size: 2rem;
-  line-height: 3.5rem;
-  width: 45%;
+  line-height: 4rem;
+  text-align: center;
 }
-@media screen and (max-width: 1024px) {
-  .appeal p {
-    font-size: 1.5rem;
-    line-height: 3rem;
+@media screen and (max-width: 768px) {
+  .appeal .appeal_txt p {
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    margin: 0 5%;
+  }
+}
+.appeal .appeal_img {
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: -15%;
+  height: 200%;
+}
+@media screen and (max-width: 768px) {
+  .appeal .appeal_img {
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 768px) {
-  .appeal p {
-    width: 100%;
-    align-self: flex-start;
+  .appeal .appeal_img {
+    margin-left: -7%;
   }
+}
+.appeal .appeal_img .ap_i:nth-of-type(1) {
+  width: 60%;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .appeal .appeal_img .ap_i:nth-of-type(1) {
+    width: 80%;
+  }
+}
+.appeal .appeal_img .ap_i:nth-of-type(2) {
+  bottom: -40%;
+  right: 10%;
+  position: absolute;
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .appeal .appeal_img .ap_i:nth-of-type(2) {
+    width: 60%;
+    right: 3%;
+  }
+}
+.appeal .appeal_img .ap_i img {
+  width: 100%;
 }
 
 .points {

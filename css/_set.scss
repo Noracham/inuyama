@@ -1,9 +1,9 @@
 @use "variables";
 @use "mixin" as m;
 html {
+  font-family: yamamotoan-classic-stdn, sans-serif;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: variables.$base_fonts;
   max-width: 100vw;
   scroll-behavior: smooth;
 }
@@ -25,7 +25,6 @@ a {
   color: #fff;
 }
 h1 {
-  font-family: hot-gfkaishokk, sans-serif;
   font-weight: 800;
   font-style: normal;
 }
