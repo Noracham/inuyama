@@ -208,7 +208,8 @@ dl {
       }
     }
     p{
-      font-size: 2rem;
+      margin-top: 5%;
+      font-size: 2.3rem;
       line-height: 4rem;
       text-align: center;
       @include m.mq(sp){
@@ -251,6 +252,7 @@ dl {
       }
       img{
         width: 100%;
+        border-radius: 5%;
       }
     }
   }

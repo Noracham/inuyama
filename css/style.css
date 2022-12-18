@@ -442,7 +442,8 @@ dl div dt {
   }
 }
 .appeal .appeal_txt p {
-  font-size: 2rem;
+  margin-top: 5%;
+  font-size: 2.3rem;
   line-height: 4rem;
   text-align: center;
 }
@@ -494,6 +495,7 @@ dl div dt {
 }
 .appeal .appeal_img .ap_i img {
   width: 100%;
+  border-radius: 5%;
 }
 
 .points {

@@ -22,14 +22,16 @@ $(function(){
     });
 
     //appeal
-    let n_width = $(window).width();
-    $(window).on("click",function(){
-
+    $(window).on("load resize",function(){
+        let n_width = $(window).width();
         console.log(n_width);
-    })
-    if(n_width < 768){
+    if(n_width < 1024){
         $(".appeal_txt h1").html("<h1>犬山城下町で<br>食と遊びを届ける</h1>");
+    }else{
+        $(".appeal_txt h1").html("<h1>犬山城下町で食と遊びを届ける</h1>");
     }
+    })
+    
 
     // scrollevent2 inview
     $(".v_inblur").on("inview",function(event,isInView){
