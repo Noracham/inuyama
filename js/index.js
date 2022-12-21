@@ -31,6 +31,12 @@ $(function(){
         $(".appeal_txt h1").html("<h1>犬山城下町で食と遊びを届ける</h1>");
     }
     })
+
+    //shops
+    $(".shop:nth-of-type(even) .shop_frame").css({
+        "background-color": "#000"
+    }
+    )
     
 
     // scrollevent2 inview
