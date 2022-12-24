@@ -117,10 +117,12 @@
 
 //news(お知らせ)
 .news {
+  padding: 5% 0;
   background-color: #fff;
   @include m.mq(sp) {
   }
   .news_list{
+    width: 100%;
     padding: 100px 0;
     background-size: contain;
     background-repeat: no-repeat;
@@ -131,10 +133,13 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 2rem;
     text-align: center;
     dl{
+      padding: 1% 0;
+      width: 50%;
       display: flex;
       justify-content: flex-start;
       dt{
@@ -144,6 +149,7 @@
   }
 }
 .subtitle {
+  font-size: 6rem;
   @include m.mq(sp) {
     font-size: 4rem;
   }
@@ -251,7 +257,6 @@
           height: 10px;
           background-image: url(../img/shop_bar.png);
           background-blend-mode: lighten;      
-          background-color: rgba(255,255,255,0.7);
           background-size: cover;
           left: -2rem;
           bottom: 0;

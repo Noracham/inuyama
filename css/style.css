@@ -340,9 +340,11 @@ header {
 }
 
 .news {
+  padding: 5% 0;
   background-color: #fff;
 }
 .news .news_list {
+  width: 100%;
   padding: 100px 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -352,11 +354,14 @@ header {
   background-blend-mode: lighten;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
   text-align: center;
 }
 .news .news_list dl {
+  padding: 1% 0;
+  width: 50%;
   display: flex;
   justify-content: flex-start;
 }
@@ -364,6 +369,9 @@ header {
   justify-self: start;
 }
 
+.subtitle {
+  font-size: 6rem;
+}
 @media screen and (max-width: 768px) {
   .subtitle {
     font-size: 4rem;
@@ -491,7 +499,6 @@ header {
   height: 10px;
   background-image: url(../img/shop_bar.png);
   background-blend-mode: lighten;
-  background-color: rgba(255, 255, 255, 0.7);
   background-size: cover;
   left: -2rem;
   bottom: 0;
