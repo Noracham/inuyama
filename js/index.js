@@ -33,11 +33,18 @@ $(function(){
     })
 
     //shops
-    $(".shop:nth-of-type(even) .shop_frame").css({
-        "background-color": "#000"
+    $(window).on("load resize",function(){
+        let n_width = $(window).width();
+        console.log(n_width);
+    if(n_width < 1024){
+        $(".shop:nth-of-type(odd) .shop_frame").remove();
+        $(".shop:nth-of-type(odd)").prepend('<div class="shop_frame odd_color"><div class="shop_img"></div></div>')
+    }else{
+        $(".shop:nth-of-type(odd) .shop_frame").remove();
+        $(".shop:nth-of-type(odd)").append('<div class="shop_frame odd_color"><div class="shop_img"></div></div>')
     }
-    )
-    
+    })
+
 
     // scrollevent2 inview
     $(".v_inblur").on("inview",function(event,isInView){
