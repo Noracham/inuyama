@@ -117,6 +117,7 @@
 
 //news(お知らせ)
 .news {
+  position: relative;
   padding: 5% 0;
   background-color: #fff;
   @include m.mq(sp) {
@@ -141,6 +142,7 @@
       width: 50%;
       display: flex;
       justify-content: flex-start;
+      border-bottom: 1px solid #000;
       dt{
         justify-self: start;
       }
