@@ -73,6 +73,13 @@ h1 {
     }
   }
 }
+//使い回しpadding
+.sec_padding{
+  padding: 5% 0;
+  @include m.mq(sp) {
+    padding: 15% 0;
+  }
+}
 //見出し
 .subtitle{
   font-size: 5rem;
@@ -84,6 +91,37 @@ h1 {
     top: -20px;
   }
 }
+//inアニメーション
+.in_blur{
+  animation: in_blur 1s 0.5s forwards;
+  @keyframes in_blur {
+    from{
+      opacity: 0;
+      filter: blur(10px);
+    }
+    to{
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+}
+.in_scale{
+  animation: in_scale 0.8s 0.5s forwards;
+  @keyframes in_scale {
+    from{
+      opacity: 0;
+      transform: scale(0.9);
+     }
+    to{
+      opacity: 1;
+      transform: scale(1);
+     }
+    } 
+  }
+.in_slide{
+  
+}
+
 // .news_title{
 //   &::after{
 //   position: absolute;

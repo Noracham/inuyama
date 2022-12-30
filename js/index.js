@@ -57,15 +57,10 @@ $(function(){
     $(".v_inup").one("inview",function(event,isInView){
         $(this).addClass("visible_inup")
     })
-    
-
-
-    //googlemap resize
-    // let win_width = $(window).width();
-    // if(win_width <= 1024){
-    //     $("#g_map").prop({
-    //         "width":"300",
-    //         "height":"213"
-    //     })
-    // }
+    $(".appeal_txt").one("inview",function(event,isInView){
+        $(this).addClass("in_blur")
+    })
+    $(".ap_i").one("inview",function(event,isInView){
+        $(this).addClass("in_scale")
+    })
 })
