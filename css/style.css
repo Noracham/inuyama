@@ -185,27 +185,27 @@ h1 {
 }
 
 .in_slide {
-  -webkit-animation: in_slide 0.8s 0.5s forwards;
-          animation: in_slide 0.8s 0.5s forwards;
+  -webkit-animation: in_slide 0.8s 0.8s forwards;
+          animation: in_slide 0.8s 0.8s forwards;
 }
 @-webkit-keyframes in_slide {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 @keyframes in_slide {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -770,7 +770,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 200px;
   background-color: #341800;
 }
 @media screen and (max-width: 768px) {
@@ -779,7 +778,7 @@ footer {
   }
 }
 footer .com_info {
-  margin: 10px;
+  margin: 20px;
   color: #fff;
   font-size: 1.5rem;
   align-self: flex-start;
