@@ -63,4 +63,7 @@ $(function(){
     $(".ap_i").one("inview",function(event,isInView){
         $(this).addClass("in_scale")
     })
+    $(".shop").one("inview",function(event,isInView){
+        $(this).addClass("in_slide")
+    })
 })

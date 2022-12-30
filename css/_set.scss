@@ -89,6 +89,9 @@ h1 {
     font-size: 2.5rem;
     position: relative;
     top: -20px;
+    @include m.mq(sp){
+      font-size: 1.7rem;
+    }
   }
 }
 //inアニメーション
@@ -119,7 +122,17 @@ h1 {
     } 
   }
 .in_slide{
-  
+  animation: in_slide 0.8s 0.5s forwards;
+  @keyframes in_slide {
+    from{
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }    
+  }
 }
 
 // .news_title{
