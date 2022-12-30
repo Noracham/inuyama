@@ -349,6 +349,11 @@ header {
   padding: 5% 0;
   background-color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .news {
+    padding: 15% 0;
+  }
+}
 .news .news_list {
   width: 100%;
   padding: 100px 0;
@@ -371,6 +376,17 @@ header {
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px solid #000;
+}
+@media screen and (max-width: 1024px) {
+  .news .news_list dl {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news .news_list dl {
+    font-size: 1.5rem;
+    width: 90%;
+  }
 }
 .news .news_list dl dt {
   justify-self: start;
@@ -543,6 +559,11 @@ header {
   font-size: 2rem;
   line-height: 4rem;
 }
+@media screen and (max-width: 768px) {
+  .shops .shop .shop_info p {
+    font-size: 1.7rem;
+  }
+}
 .shops .shop .shop_info .shop_fl {
   margin-top: 20px;
   display: flex;
@@ -569,7 +590,7 @@ header {
 }
 @media screen and (max-width: 1024px) {
   .shops .shop .shop_frame {
-    width: 100%;
+    width: 98%;
     max-width: 750px;
     height: 400px;
   }
