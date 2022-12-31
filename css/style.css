@@ -306,63 +306,6 @@ header {
 .main_visu .link_icon img {
   width: 100%;
 }
-.main_visu .logo_visu {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: absolute;
-  top: -8px;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: main_In forwards;
-          animation: main_In forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  opacity: 0;
-}
-@-webkit-keyframes main_In {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes main_In {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.main_visu .logo_visu img {
-  background-color: rgb(240, 241, 229);
-  box-shadow: 0 0 15px rgb(240, 241, 229);
-  border-radius: 0;
-  padding: 3% 5%;
-  width: 300px;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (max-width: 1024px) {
-  .main_visu .logo_visu img {
-    width: 250px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main_visu .logo_visu img {
-    width: 190px;
-    padding: 7%;
-  }
-}
 .main_visu .menu {
   position: absolute;
   top: 0;
@@ -440,6 +383,64 @@ header {
 .main_visu .menu li a:hover {
   transform: scale(1.1);
   opacity: 0;
+}
+
+.logo_visu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: -8px;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: main_In forwards;
+          animation: main_In forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  opacity: 0;
+}
+@-webkit-keyframes main_In {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes main_In {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.logo_visu img {
+  background-color: rgb(240, 241, 229);
+  box-shadow: 0 0 15px rgb(240, 241, 229);
+  border-radius: 0;
+  padding: 3% 5%;
+  width: 300px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .logo_visu img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo_visu img {
+    width: 190px;
+    padding: 7%;
+  }
 }
 
 #slider {
@@ -596,7 +597,7 @@ header {
 .shops {
   padding: 7% 0;
   width: 100%;
-  background-color: #F0EEE4;
+  background-color: #f0eee4;
 }
 @media screen and (max-width: 768px) {
   .shops {
@@ -836,4 +837,80 @@ footer .f_link img {
     width: 40px;
     height: 40px;
   }
+}
+
+.shop_visu {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/shop1_visu1.jpeg);
+  background-position: center center;
+}
+.shop_visu .shop_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 450px;
+  background-color: #271C10;
+}
+.shop_visu .shop_title h1 {
+  margin: 20px 0 0 0;
+  color: rgb(245, 90, 0);
+  text-align: center;
+  font-size: 6.5rem;
+}
+.shop_visu .shop_title h1 span {
+  position: relative;
+  bottom: 20px;
+  color: #ffba00;
+  font-size: 2.5rem;
+}
+
+.info {
+  padding-bottom: 10%;
+  background-color: rgb(240, 241, 229);
+}
+.info .genre {
+  margin: 0 auto;
+  padding: 100px;
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .genre .genre_in {
+  background-color: #271C10;
+  width: 200px;
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.info .genre .genre_in img {
+  height: 90%;
+  padding: 0 5px;
+}
+.info .genre .genre_in span {
+  font-size: 4rem;
+  color: #fff;
+}
+.info .info_txt {
+  max-width: 1000px;
+  width: 70%;
+  line-height: 4rem;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+.info .info_times {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: right;
+  margin: 7% 10% 0 0;
+}
+
+.shop_menu {
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
