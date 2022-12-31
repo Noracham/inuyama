@@ -861,7 +861,6 @@ footer .f_link img {
   }
 }
 .shop_visu .shop_title h1 {
-  margin: 0;
   position: relative;
   top: -35px;
   color: rgb(245, 90, 0);
@@ -870,6 +869,7 @@ footer .f_link img {
 }
 @media screen and (max-width: 768px) {
   .shop_visu .shop_title h1 {
+    margin: 0;
     top: 5px;
     font-size: 5.3rem;
   }
@@ -890,14 +890,29 @@ footer .f_link img {
   padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
 }
+@media screen and (max-width: 768px) {
+  .info {
+    padding-bottom: 20%;
+  }
+}
 .info .genre {
   margin: 0 auto;
-  padding: 100px;
+  padding: 100px 0;
   width: 70%;
   max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .info .genre {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info .genre {
+    width: 95%;
+  }
 }
 .info .genre .genre_in {
   background-color: #271C10;
@@ -909,6 +924,12 @@ footer .f_link img {
   align-items: center;
   border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+  .info .genre .genre_in {
+    width: 30%;
+    height: 40px;
+  }
+}
 .info .genre .genre_in img {
   height: 90%;
   padding: 0 5px;
@@ -917,6 +938,11 @@ footer .f_link img {
   font-size: 4rem;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .info .genre .genre_in span {
+    font-size: 2.5rem;
+  }
+}
 .info .info_txt {
   max-width: 1000px;
   width: 70%;
@@ -924,11 +950,26 @@ footer .f_link img {
   font-size: 2rem;
   margin: 0 auto;
 }
+@media screen and (max-width: 1024px) {
+  .info .info_txt {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info .info_txt {
+    width: 95%;
+  }
+}
 .info .info_times {
   font-size: 1.6rem;
   line-height: 2.5rem;
   text-align: right;
   margin: 7% 10% 0 0;
+}
+@media screen and (max-width: 768px) {
+  .info .info_times {
+    margin: 15% 3% 0 0;
+  }
 }
 
 .shop_menu {

@@ -489,13 +489,13 @@ footer {
       height: 100px;
     }
     h1 {
-      margin: 0;
       position: relative;
       top: -35px;
       color: rgb(245, 90, 0);
       text-align: center;
       font-size: 6.5rem;
       @include m.mq(sp){
+        margin: 0;
         top: 5px;
         font-size: 5.3rem;
       }
@@ -514,14 +514,23 @@ footer {
 .info {
   padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
+  @include m.mq(sp){
+    padding-bottom:20%;
+  }
   .genre {
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px 0;
     width: 70%;
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include m.mq(tab){
+      width: 85%;
+    }
+    @include m.mq(sp){
+      width: 95%;
+    }
     .genre_in {
       background-color: #271C10;
       width: 200px;
@@ -531,6 +540,10 @@ footer {
       justify-content: center;
       align-items: center;
       border-radius: 10px;
+      @include m.mq(sp){
+        width: 30%;
+        height: 40px;
+      }
       img {
         height: 90%;
         padding: 0 5px;
@@ -538,6 +551,9 @@ footer {
       span {
         font-size: 4rem;
         color: #fff;
+        @include m.mq(sp){
+          font-size: 2.5rem;
+        }
       }
     }
   }
@@ -547,12 +563,21 @@ footer {
     line-height: 4rem;
     font-size: 2rem;
     margin: 0 auto;
+    @include m.mq(tab){
+      width: 85%;
+    }
+    @include m.mq(sp){
+      width: 95%;
+    }
   }
   .info_times{
     font-size: 1.6rem;
     line-height: 2.5rem;
     text-align: right;
     margin: 7% 10% 0 0;
+    @include m.mq(sp){
+      margin:15% 3% 0 0;
+    }
   }
 }
 .shop_menu{
