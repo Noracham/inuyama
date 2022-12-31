@@ -484,17 +484,29 @@ footer {
     width: 450px;
     height: 140px;
     background-color: #271C10;
+    @include m.mq(sp){
+      width: 100vw;
+      height: 100px;
+    }
     h1 {
+      margin: 0;
       position: relative;
       top: -35px;
       color: rgb(245, 90, 0);
       text-align: center;
       font-size: 6.5rem;
+      @include m.mq(sp){
+        top: 5px;
+        font-size: 5.3rem;
+      }
       span {
         position: relative;
         bottom: 30px;
         color: #ffba00;
         font-size: 2.2rem;
+        @include m.mq(sp){
+          font-size: 1.8rem;
+        }
       }
     }
   }

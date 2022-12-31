@@ -854,18 +854,36 @@ footer .f_link img {
   height: 140px;
   background-color: #271C10;
 }
+@media screen and (max-width: 768px) {
+  .shop_visu .shop_title {
+    width: 100vw;
+    height: 100px;
+  }
+}
 .shop_visu .shop_title h1 {
+  margin: 0;
   position: relative;
   top: -35px;
   color: rgb(245, 90, 0);
   text-align: center;
   font-size: 6.5rem;
 }
+@media screen and (max-width: 768px) {
+  .shop_visu .shop_title h1 {
+    top: 5px;
+    font-size: 5.3rem;
+  }
+}
 .shop_visu .shop_title h1 span {
   position: relative;
   bottom: 30px;
   color: #ffba00;
   font-size: 2.2rem;
+}
+@media screen and (max-width: 768px) {
+  .shop_visu .shop_title h1 span {
+    font-size: 1.8rem;
+  }
 }
 
 .info {
