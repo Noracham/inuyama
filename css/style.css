@@ -851,19 +851,21 @@ footer .f_link img {
   bottom: 0;
   left: 0;
   width: 450px;
+  height: 140px;
   background-color: #271C10;
 }
 .shop_visu .shop_title h1 {
-  margin: 20px 0 0 0;
+  position: relative;
+  top: -35px;
   color: rgb(245, 90, 0);
   text-align: center;
   font-size: 6.5rem;
 }
 .shop_visu .shop_title h1 span {
   position: relative;
-  bottom: 20px;
+  bottom: 30px;
   color: #ffba00;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .info {
