@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: url(../img/background_washi.jpeg);
-}
-
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -567,9 +563,13 @@ header {
 }
 .appeal .appeal_img .ap_i {
   opacity: 0;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.357);
 }
 .appeal .appeal_img .ap_i:nth-of-type(1) {
-  width: 60%;
+  background-image: url(../img/Frame_visu1.png);
+  background-size: cover;
+  width: 60vw;
+  height: 40vw;
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
@@ -578,10 +578,13 @@ header {
   }
 }
 .appeal .appeal_img .ap_i:nth-of-type(2) {
+  background-image: url(../img/Frame_visu1.png);
+  background-size: cover;
   bottom: -40%;
   right: 10%;
   position: absolute;
-  width: 40%;
+  width: 40vw;
+  height: 26.66vw;
 }
 @media screen and (max-width: 768px) {
   .appeal .appeal_img .ap_i:nth-of-type(2) {
@@ -591,7 +594,6 @@ header {
 }
 .appeal .appeal_img .ap_i img {
   width: 100%;
-  border-radius: 1%;
 }
 
 .shops {
