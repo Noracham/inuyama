@@ -20,7 +20,7 @@ $(function(){
         timer:true,
         overlay: './img/09.png'
     });
-
+    //main
     //appeal
     $(window).on("load resize",function(){
         let n_width = $(window).width();
