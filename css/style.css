@@ -932,8 +932,8 @@ footer .f_link img {
   }
 }
 .info .genre .genre_in img {
-  height: 90%;
-  padding: 0 5px;
+  height: 75%;
+  padding: 0 10px;
 }
 .info .genre .genre_in span {
   font-size: 4rem;
