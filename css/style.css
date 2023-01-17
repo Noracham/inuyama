@@ -720,7 +720,6 @@ header {
 }
 
 .floormap {
-  border-radius: 3%;
   background-color: rgb(240, 241, 229);
 }
 .floormap .maps {
