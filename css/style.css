@@ -565,16 +565,24 @@ header {
   opacity: 0;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.357);
 }
+@media screen and (max-width: 768px) {
+  .appeal .appeal_img .ap_i {
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.357);
+  }
+}
 .appeal .appeal_img .ap_i:nth-of-type(1) {
   background-image: url(../img/Frame_visu1.png);
   background-size: cover;
   width: 60vw;
+  max-width: 1152px;
+  max-height: 768px;
   height: 40vw;
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
   .appeal .appeal_img .ap_i:nth-of-type(1) {
-    width: 80%;
+    width: 80vw;
+    height: 53.38vw;
   }
 }
 .appeal .appeal_img .ap_i:nth-of-type(2) {
@@ -585,10 +593,13 @@ header {
   position: absolute;
   width: 40vw;
   height: 26.66vw;
+  max-width: 768px;
+  max-height: 511.872px;
 }
 @media screen and (max-width: 768px) {
   .appeal .appeal_img .ap_i:nth-of-type(2) {
-    width: 60%;
+    width: 60vw;
+    height: 40vw;
     right: 3%;
   }
 }

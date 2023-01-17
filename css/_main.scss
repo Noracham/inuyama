@@ -231,14 +231,20 @@
     .ap_i {
       opacity: 0;
       box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.357);
+      @include m.mq(sp){
+      box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.357);
+      }
       &:nth-of-type(1) {
         background-image: url(../img/Frame_visu1.png);
         background-size: cover;
         width: 60vw;
+        max-width: calc(1920px * 0.6);
+        max-height: calc(1920px * 0.4);
         height: 40vw;
         z-index: 2;
         @include m.mq(sp) {
-          width: 80%;
+          width: 80vw;
+          height: 53.38vw;
         }
       }
       &:nth-of-type(2) {
@@ -249,8 +255,11 @@
         position: absolute;
         width: 40vw;
         height: 26.66vw;
+        max-width: calc(1920px * 0.4);
+        max-height: calc(1920px * 0.2666);
         @include m.mq(sp) {
-          width: 60%;
+          width: 60vw;
+          height: 40vw;
           right: 3%;
         }
       }
