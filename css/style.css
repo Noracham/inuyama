@@ -303,37 +303,91 @@ header {
 .main_visu .link_icon:nth-of-type(2) {
   left: 85px;
 }
+@media screen and (max-width: 768px) {
+  .main_visu .link_icon:nth-of-type(2) {
+    left: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_visu .link_icon {
+    width: 25px;
+    height: 25px;
+  }
+}
 .main_visu .link_icon img {
   width: 100%;
 }
 .main_visu .menu {
-  position: relative;
-  width: 170px;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
-  bottom: 10px;
-  right: 20px;
+  padding: 0;
+  top: 20px;
+  left: 10px;
   z-index: 999;
 }
 @media screen and (max-width: 768px) {
   .main_visu .menu {
+    width: 120px;
     bottom: 5px;
     right: 5px;
   }
 }
 .main_visu .menu li {
-  border: 1px solid rgb(144, 92, 40);
-  background-color: rgb(70, 31, 0);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(69, 36, 0);
+  box-shadow: rgba(69, 36, 0, 0.95) 0 0 20px;
+  width: 130px;
+  height: 130px;
   position: relative;
-  padding: 20px 0;
   list-style: none;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #fff;
+  color: rgb(243, 117, 0);
+}
+.main_visu .menu li:nth-of-type(1) {
+  top: 350px;
+  left: 40px;
+  box-shadow: rgba(240, 241, 229, 0.95) 0 0 10px;
+  background-color: rgb(240, 241, 229);
+  z-index: 2;
+}
+.main_visu .menu li:nth-of-type(2) {
+  top: 120px;
+  left: 130px;
+  width: 150px;
+  height: 150px;
+  font-size: 2.4rem;
+  z-index: 3;
+}
+.main_visu .menu li:nth-of-type(3) {
+  top: 160px;
+  left: 95px;
+  width: 110px;
+  height: 110px;
+  font-size: 2rem;
+}
+.main_visu .menu li:nth-of-type(3) span {
+  font-size: 1.2rem;
 }
 .main_visu .menu li:not(:first-child) {
   margin-top: 5px;
+}
+.main_visu .menu li span {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  .main_visu .menu li {
+    font-size: 1.8rem;
+  }
 }
 .main_visu .menu li a {
   position: absolute;
@@ -346,28 +400,22 @@ header {
   transform: scale(1.1);
   opacity: 0;
 }
-.main_visu .menu li::after {
-  top: 6%;
-  left: 2.5%;
-  position: absolute;
-  content: "";
-  width: 94%;
-  height: 86%;
-  border: 1px solid rgb(144, 92, 40);
-}
 
 .logo_visu {
+  z-index: 9999;
   background-image: url(../img/tensya_square.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: rgba(240, 241, 229, 0.803);
+  background-color: rgb(240, 241, 229);
+  box-shadow: rgba(240, 241, 229, 0.95) 0 0 20px;
   position: absolute;
   top: -8px;
   width: 200px;
   padding: 50px;
   margin: 20px;
   height: 200px;
+  border-radius: 50%;
   -webkit-animation: main_In forwards;
           animation: main_In forwards;
   -webkit-animation-delay: 0.5s;
@@ -383,7 +431,7 @@ header {
     padding: 25px;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 30px auto;
   }
 }
 @-webkit-keyframes main_In {
