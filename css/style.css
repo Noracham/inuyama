@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(../img/background_washi.jpeg);
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -303,71 +307,33 @@ header {
   width: 100%;
 }
 .main_visu .menu {
+  position: relative;
+  width: 170px;
+  padding: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 10px;
+  right: 20px;
   z-index: 999;
 }
 @media screen and (max-width: 768px) {
   .main_visu .menu {
-    top: 180px;
+    bottom: 5px;
+    right: 5px;
   }
 }
 .main_visu .menu li {
+  border: 1px solid rgb(144, 92, 40);
+  background-color: rgb(70, 31, 0);
+  text-align: center;
   position: relative;
-  width: 100px;
-  opacity: 0;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 20px 0;
   list-style: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: #fff;
-  background-color: rgba(52, 24, 0, 0.8745098039);
 }
-.main_visu .menu li:nth-of-type(1) {
-  -webkit-animation: menu_In forwards;
-          animation: menu_In forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.main_visu .menu li:nth-of-type(2) {
-  -webkit-animation: menu_In forwards;
-          animation: menu_In forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1.25s;
-          animation-delay: 1.25s;
-}
-.main_visu .menu li:nth-of-type(3) {
-  -webkit-animation: menu_In forwards;
-          animation: menu_In forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-@-webkit-keyframes menu_In {
-  0% {
-    opacity: 1;
-    transform: translateX(200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes menu_In {
-  0% {
-    opacity: 1;
-    transform: translateX(200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.main_visu .menu li:not(:first-child) {
+  margin-top: 5px;
 }
 .main_visu .menu li a {
   position: absolute;
@@ -380,15 +346,28 @@ header {
   transform: scale(1.1);
   opacity: 0;
 }
+.main_visu .menu li::after {
+  top: 6%;
+  left: 2.5%;
+  position: absolute;
+  content: "";
+  width: 94%;
+  height: 86%;
+  border: 1px solid rgb(144, 92, 40);
+}
 
 .logo_visu {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  background-image: url(../img/tensya_square.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(240, 241, 229, 0.803);
   position: absolute;
   top: -8px;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  padding: 50px;
+  margin: 20px;
+  height: 200px;
   -webkit-animation: main_In forwards;
           animation: main_In forwards;
   -webkit-animation-delay: 0.5s;
@@ -396,6 +375,16 @@ header {
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
   opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .logo_visu {
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 @-webkit-keyframes main_In {
   0% {
@@ -415,27 +404,6 @@ header {
   100% {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-.logo_visu img {
-  background-color: rgb(240, 241, 229);
-  box-shadow: 0 0 15px rgb(240, 241, 229);
-  border-radius: 0;
-  padding: 3% 5%;
-  width: 300px;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (max-width: 1024px) {
-  .logo_visu img {
-    width: 250px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .logo_visu img {
-    width: 190px;
-    padding: 7%;
   }
 }
 
