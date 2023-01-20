@@ -443,12 +443,17 @@ footer {
   background-image: url(../img/shop1_visu1.jpeg);
   background-position: center center;
   .shop_title {
+    z-index: 999;
     position: absolute;
-    bottom: 0;
+    border-top: #341800 5px solid;
+    border-left: #341800 5px solid;
+    border-bottom: rgb(240, 241, 229) 3px solid;
+    border-radius: 10px 0 0 0;
+    bottom: -5px;
     right: 0;
     width: 450px;
     height: 140px;
-    background-color: #271C10;
+    background-color: rgb(240, 241, 229);
     @include m.mq(sp){
       width: 100vw;
       height: 100px;
@@ -459,6 +464,7 @@ footer {
       color: rgb(245, 90, 0);
       text-align: center;
       font-size: 6.5rem;
+      padding-top: 10px;
       @include m.mq(sp){
         margin: 0;
         top: 5px;
@@ -477,6 +483,7 @@ footer {
   }
 }
 .info {
+  border-top: #341800 5px solid;
   padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
   @include m.mq(sp){
@@ -552,4 +559,37 @@ footer {
 }
 .shop_menu{
   background-color: #fff;
+}
+.pickup_menu{
+  max-width: calc(1920px*0.9);
+  width: 90%;
+  margin: 5% ;
+  display: flex;
+  justify-content: space-around;
+  }
+  .pinckup_one{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    p{
+      display: flex;
+      justify-content: space-between;
+      font-size: 2rem;
+    }
+  }
+  .pickup_img{
+    width: 100%;
+    // height: auto;
+    box-shadow: #000 0 0 5px ;
+    img{
+      aspect-ratio: 4/3;
+      width: 100%;
+      object-fit: contain;
+      vertical-align: top;
+    }
+
+
+  p{
+    font-size: 2rem;
+  }
 }
