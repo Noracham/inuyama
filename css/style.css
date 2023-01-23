@@ -1109,10 +1109,12 @@ footer .f_link img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: #000 0 0 5px;
 }
 .other_menu .other_menu_img img {
   width: 100%;
   height: auto;
+  vertical-align: top;
 }
 .other_menu .other_menu_list {
   width: 35%;
