@@ -939,6 +939,7 @@ footer .f_link img {
   .shop_visu .shop_title {
     width: 100vw;
     height: 100px;
+    bottom: -6px;
   }
 }
 .shop_visu .shop_title h1 {
