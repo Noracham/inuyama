@@ -578,7 +578,8 @@ footer {
     margin-left: 0;
   }
   }
-  .pinckup_one{
+  .pickup_one{
+    opacity: 0;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -632,6 +633,7 @@ footer {
     flex-direction: column;
   }
   .other_menu_img{
+    opacity: 0;
     width: 40%;
     height: auto;
     @include m.mq(sp){

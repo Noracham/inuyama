@@ -66,4 +66,11 @@ $(function(){
     $(".shop").one("inview",function(event,isInView){
         $(this).addClass("in_slide")
     })
+    $(".pickup_one").one("inview",function(event,isInView){
+        $(this).addClass("in_slide")
+    })
+    $(".other_menu_img").one("inview",function(event,isInView){
+        $(this).addClass("in_slide")
+    })
+
 })
