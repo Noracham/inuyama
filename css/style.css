@@ -1045,7 +1045,7 @@ footer .f_link img {
 }
 @media screen and (max-width: 768px) {
   .info .info_txt {
-    width: 95%;
+    width: 90%;
   }
 }
 .info .info_times {
@@ -1071,21 +1071,51 @@ footer .f_link img {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 768px) {
+  .pickup_menu {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 
 .pinckup_one {
   width: 25%;
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .pinckup_one {
+    width: 95%;
+  }
+  .pinckup_one:not(:first-child) {
+    margin-top: 10%;
+  }
+}
 .pinckup_one p {
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
 }
+@media screen and (max-width: 1024px) {
+  .pinckup_one p {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pinckup_one p {
+    font-size: 2rem;
+    width: 95%;
+  }
+}
 
 .pickup_img {
   width: 100%;
   box-shadow: #000 0 0 5px;
+}
+@media screen and (max-width: 768px) {
+  .pickup_img {
+    width: 95%;
+  }
 }
 .pickup_img img {
   aspect-ratio: 4/3;
@@ -1103,23 +1133,45 @@ footer .f_link img {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .other_menu {
+    flex-direction: column;
+  }
 }
 .other_menu .other_menu_img {
   width: 40%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  box-shadow: #000 0 0 5px;
+}
+@media screen and (max-width: 768px) {
+  .other_menu .other_menu_img {
+    width: 95%;
+  }
 }
 .other_menu .other_menu_img img {
+  box-shadow: #000 0 0 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
-  height: auto;
   vertical-align: top;
 }
 .other_menu .other_menu_list {
   width: 35%;
   margin-left: 5%;
   font-size: 2.3rem;
+}
+@media screen and (max-width: 1024px) {
+  .other_menu .other_menu_list {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .other_menu .other_menu_list {
+    margin-left: 0;
+    margin-top: 10%;
+    width: 95%;
+  }
 }
 .other_menu .other_menu_list dl {
   margin: 0;
