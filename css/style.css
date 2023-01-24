@@ -1049,6 +1049,7 @@ footer .f_link img {
 @media screen and (max-width: 768px) {
   .info .info_txt {
     width: 90%;
+    font-size: 1.6rem;
   }
 }
 .info .info_times {

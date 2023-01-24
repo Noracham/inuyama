@@ -549,6 +549,7 @@ footer {
     }
     @include m.mq(sp){
       width: 90%;
+      font-size: 1.6rem;
     }
   }
   .info_times{
