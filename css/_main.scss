@@ -407,6 +407,7 @@ footer {
     }
   }
   .f_logo {
+    justify-self: center;
     width: 300px;
     padding: 50px 0;
     @include m.mq(sp) {
@@ -523,6 +524,11 @@ footer {
       img {
         height: 75%;
         padding: 0 10px;
+      }
+      &:last-child{
+        img{
+          padding: 0 5px;
+        }
       }
       span {
         font-size: 4rem;
