@@ -635,7 +635,7 @@ header {
   }
 }
 .appeal .appeal_img .ap_i:nth-of-type(1) {
-  background-image: url(../img/Frame_visu1.png);
+  background-image: url(../img/paintV3_shop1_visu1.jpg);
   background-size: cover;
   width: 60vw;
   max-width: 1152px;
@@ -650,7 +650,7 @@ header {
   }
 }
 .appeal .appeal_img .ap_i:nth-of-type(2) {
-  background-image: url(../img/Frame_visu1.png);
+  background-image: url(../img/paintV3_shop1_visu1.jpg);
   background-size: cover;
   bottom: -40%;
   right: 10%;
